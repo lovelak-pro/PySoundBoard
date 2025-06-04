@@ -18,7 +18,7 @@ Play all kinds of funny meme sounds instantly using your keyboard.
 
 ## 🖼️ Screenshot
 
-> ![Soundboard Screenshot](assets/Screenshot.png)  
+> ![Soundboard Screenshot](assets/Screenshot-v0.0.1.png)  
 > _Sample terminal view of the soundboard_
 
 ---
