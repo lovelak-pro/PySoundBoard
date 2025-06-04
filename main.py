@@ -9,7 +9,7 @@ init(autoreset=True)
 
 
 os.system('cls')
-os.system('title Soundboard using python by Lovelak')
+os.system('title PySoundBoard V-0.0.1')
 os.system('mode con: cols=90 lines=30')
 mixer.init()
 
