@@ -16,6 +16,7 @@ Play all kinds of funny meme sounds instantly using your keyboard.
 
 ---
 
+
 ## 🖼️ Screenshot
 
 > ![Soundboard Screenshot](assets/Screenshot-v0.0.1.png)  
@@ -35,7 +36,12 @@ Play all kinds of funny meme sounds instantly using your keyboard.
 ```sh
 pip install pygame keyboard colorama
 ```
+## 💻 Softwares Needed
 
+-  [VoiceMeeter](https://vb-audio.com/Voicemeeter/index.htm)
+-  [VB-CABLE](https://vb-audio.com/Cable/index.htm)
+
+---
 ---
 
 ## ⚡ Installation & How to use!
