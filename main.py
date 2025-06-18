@@ -7,21 +7,21 @@ init(autoreset=True)
 
 os.system('cls')
 os.system('title PySoundBoard V-0.1.1')
-os.system('mode con: cols=90 lines=30')
+os.system('mode con: cols=110 lines=40')
 mixer.init()
 
 sounds = [
     ('FBI Open UP', 'num 1', 'sfx\\fbi-open-up-sfx.mp3', (0, 0)),
     ('Anime Ahh', 'num 2', 'sfx\\anime-ahh.mp3', (1, 0)),
     ('Fart Moan', 'num 3', 'sfx\\fart-moan3.mp3', (2, 0)),
-    ('Ara Ara', 'num 4', 'sfx\\ara-ara.mp3', (3, 0)),
+    ('discord-notify', 'num 4', 'sfx\\discord-notification.mp3', (3, 0)),
     ('Emotional Damage', 'num 5', 'sfx\\emotional-damage-meme.mp3', (4, 0)),
     ('Ew Brother Ew', 'num 6', 'sfx\\eww-brother-eww.mp3', (5, 0)),
-    ('Yes OMG Remix', 'num 7', 'sfx\\yes-omg-remix.mp3', (6, 0)),
+    ('Moye Moye', 'num 7', 'sfx\\moye-moye.mp3', (6, 0)),
     ('Yes Mommy', 'num 8', 'sfx\\yes_mommy.mp3', (7, 0)),
     ('Yes Daddy', 'num 9', 'sfx\\yes_daddy.mp3', (0, 1)),
     ('Thank you Anime', 'num 0', 'sfx\\thankyou_anime.mp3', (1, 1)),
-    ('Yes Yes No No KSI', 'num 1+num 2', 'sfx\\yes-yes-yes-yes-no-no-no-no.mp3', (2, 1)),
+    ('Bomb Planted', 'num 1+num 2', 'sfx\\bomb-has-been-planted-sound-effect-cs-go.mp3', (4, 3)),
     ('Yamate Kudasai', 'num 2+num 3', 'sfx\\yamate-kudasai.mp3', (3, 1)),
     ('Wee Wee Wee', 'num 4+num 5', 'sfx\\weeeee_original_1193597514938524841.mp3', (4, 1)),
     ('noob_', 'num 5+num 6', 'sfx\\noob sound.mp3', (5, 1)),
@@ -32,14 +32,14 @@ sounds = [
     ('What The Dog Doin', 'num 3+num 6', 'sfx\\what-the-dog-doin.mp3', (2, 2)),
     ('Snore Mimimi', 'num 4+num 7', 'sfx\\snore-mimimimimimi.mp3', (3, 2)),
     ('Meme Ending', 'num 5+num 8', 'sfx\\meme-de-creditos-finales.mp3', (4, 2)),
-    ('Thank you my friend', 'num 6+num 9', 'sfx\\thank_you_my_friend.mp3', (5, 2)),
+    ('hawk-tuah', 'num 6+num 9', 'sfx\\hawk-tuah.mp3', (5, 2)),
     ('Hub Intro', 'num /', 'sfx\\hub-intro-sound.mp3', (6, 2)),
-    ('Im Sponge Bob', 'num *', 'sfx\\im-spongebob.mp3', (7, 2)),
+    ('among-us SUS', 'num *', 'sfx\\among-us-role-reveal-sound.mp3', (7, 2)),
     ('Limit On Talking', 'num /+num *', 'sfx\\limit-on-talking.mp3', (0, 3)),
-    ('Sorry Indian', 'num +', 'sfx\\sorry-indian.mp3', (1, 3)),
-    ('Spiderman Meme', 'num .', 'sfx\\spiderman-meme-song.mp3', (2, 3)),
-    ('Run Meme', 'num -', 'sfx\\run-vine-sound-effect.mp3', (3, 3)),
+    ('Gop Gop Gop', 'num .', 'sfx\\gopgopgop.mp3', (2, 3)),
+    ('moaning-girl', 'num -', 'sfx\\loud-moaning-girl.mp3', (3, 3)),
     ('Gay Echo', 'num -+num *', 'sfx\\gay-echo.mp3', (4, 3)),
+    
 ]
 
 
@@ -55,7 +55,7 @@ print(f''' {Fore.GREEN}    ______      _____                       _______      
  {Back.CYAN}{Style.BRIGHT}Button > {Back.RED}{Style.BRIGHT} ( {sounds[0][1]} ) : {sounds[0][0]} \t\t\t{Back.CYAN}{Style.BRIGHT}Button > {Back.RED}{Style.BRIGHT} ( {sounds[15][1]} ) : {sounds[15][0]} {Back.RESET}
  {Back.CYAN}{Style.BRIGHT}Button > {Back.RED}{Style.BRIGHT} ( {sounds[1][1]} ) : {sounds[1][0]} \t\t\t{Back.CYAN}{Style.BRIGHT}Button > {Back.RED}{Style.BRIGHT} ( {sounds[16][1]} ) : {sounds[16][0]} {Back.RESET}
  {Back.CYAN}{Style.BRIGHT}Button > {Back.RED}{Style.BRIGHT} ( {sounds[2][1]} ) : {sounds[2][0]} \t\t\t{Back.CYAN}{Style.BRIGHT}Button > {Back.RED}{Style.BRIGHT} ( {sounds[17][1]} ) : {sounds[17][0]} {Back.RESET}
- {Back.CYAN}{Style.BRIGHT}Button > {Back.RED}{Style.BRIGHT} ( {sounds[3][1]} ) : {sounds[3][0]} \t\t\t\t{Back.CYAN}{Style.BRIGHT}Button > {Back.RED}{Style.BRIGHT} ( {sounds[18][1]} ) : {sounds[18][0]} {Back.RESET}
+ {Back.CYAN}{Style.BRIGHT}Button > {Back.RED}{Style.BRIGHT} ( {sounds[3][1]} ) : {sounds[3][0]} \t\t\t{Back.CYAN}{Style.BRIGHT}Button > {Back.RED}{Style.BRIGHT} ( {sounds[18][1]} ) : {sounds[18][0]} {Back.RESET}
  {Back.CYAN}{Style.BRIGHT}Button > {Back.RED}{Style.BRIGHT} ( {sounds[4][1]} ) : {sounds[4][0]} \t\t{Back.CYAN}{Style.BRIGHT}Button > {Back.RED}{Style.BRIGHT} ( {sounds[19][1]} ) : {sounds[19][0]} {Back.RESET}
  {Back.CYAN}{Style.BRIGHT}Button > {Back.RED}{Style.BRIGHT} ( {sounds[5][1]} ) : {sounds[5][0]} \t\t\t{Back.CYAN}{Style.BRIGHT}Button > {Back.RED}{Style.BRIGHT} ( {sounds[20][1]} ) : {sounds[20][0]} {Back.RESET}
  {Back.CYAN}{Style.BRIGHT}Button > {Back.RED}{Style.BRIGHT} ( {sounds[6][1]} ) : {sounds[6][0]} \t\t\t{Back.CYAN}{Style.BRIGHT}Button > {Back.RED}{Style.BRIGHT} ( {sounds[21][1]} ) : {sounds[21][0]} {Back.RESET}
@@ -63,9 +63,9 @@ print(f''' {Fore.GREEN}    ______      _____                       _______      
  {Back.CYAN}{Style.BRIGHT}Button > {Back.RED}{Style.BRIGHT} ( {sounds[8][1]} ) : {sounds[8][0]} \t\t\t{Back.CYAN}{Style.BRIGHT}Button > {Back.RED}{Style.BRIGHT} ( {sounds[23][1]} ) : {sounds[23][0]} {Back.RESET}
  {Back.CYAN}{Style.BRIGHT}Button > {Back.RED}{Style.BRIGHT} ( {sounds[9][1]} ) : {sounds[9][0]} \t\t\t{Back.CYAN}{Style.BRIGHT}Button > {Back.RED}{Style.BRIGHT} ( {sounds[24][1]} ) : {sounds[24][0]} {Back.RESET}
  {Back.CYAN}{Style.BRIGHT}Button > {Back.RED}{Style.BRIGHT} ( {sounds[10][1]} ) : {sounds[10][0]} \t\t{Back.CYAN}{Style.BRIGHT}Button > {Back.RED}{Style.BRIGHT} ( {sounds[25][1]} ) : {sounds[25][0]} {Back.RESET}
- {Back.CYAN}{Style.BRIGHT}Button > {Back.RED}{Style.BRIGHT} ( {sounds[11][1]} ) : {sounds[11][0]} \t\t{Back.CYAN}{Style.BRIGHT}Button > {Back.RED}{Style.BRIGHT} ( {sounds[26][1]} ) : {sounds[26][0]} {Back.RESET}
- {Back.CYAN}{Style.BRIGHT}Button > {Back.RED}{Style.BRIGHT} ( {sounds[12][1]} ) : {sounds[12][0]} \t\t{Back.CYAN}{Style.BRIGHT}Button > {Back.RED}{Style.BRIGHT} ( {sounds[27][1]} ) : {sounds[27][0]} {Back.RESET}
- {Back.CYAN}{Style.BRIGHT}Button > {Back.RED}{Style.BRIGHT} ( {sounds[13][1]} ) : {sounds[13][0]} \t\t\t{Back.CYAN}{Style.BRIGHT}Button > {Back.RED}{Style.BRIGHT} ( {sounds[28][1]} ) : {sounds[28][0]} {Back.RESET}
+ {Back.CYAN}{Style.BRIGHT}Button > {Back.RED}{Style.BRIGHT} ( {sounds[11][1]} ) : {sounds[11][0]}\t\t{Back.CYAN}{Style.BRIGHT}Button > {Back.RED}{Style.BRIGHT} ( {sounds[26][1]} ) : {sounds[26][0]} {Back.RESET}
+ {Back.CYAN}{Style.BRIGHT}Button > {Back.RED}{Style.BRIGHT} ( {sounds[12][1]} ) : {sounds[12][0]}  \t\t{Back.CYAN}{Style.BRIGHT}Button > {Back.RED}{Style.BRIGHT} ( {sounds[27][1]} ) : {sounds[27][0]} {Back.RESET}
+ {Back.CYAN}{Style.BRIGHT}Button > {Back.RED}{Style.BRIGHT} ( {sounds[13][1]} ) : {sounds[13][0]}
  {Back.CYAN}{Style.BRIGHT}Button > {Back.RED}{Style.BRIGHT} ( {sounds[14][1]} ) : {sounds[14][0]}
 
 \n\n{Back.MAGENTA}{Style.BRIGHT} Use Ctrl + C to stop the program...
@@ -87,7 +87,6 @@ def playSound(path):
         mixer.music.load(path)
         mixer.music.play()
 
-# ...existing code...
 
 # Map numpad scan codes to numpad key names
 numpad_scan_codes = {
@@ -133,7 +132,6 @@ def on_key_press(event):
                 except ValueError:
                     pass
 
-# ...existing code...
 
 keyboard.on_press(on_key_press)
 keyboard.add_hotkey('F12', toggle_pause)
